@@ -1,0 +1,272 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: #E8EEF1;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  
+  .navbar {
+    background: #1E3D58;
+    width: 100%;
+    color: white !important;
+    text-transform: uppercase;
+  }
+  
+  #hero-target, #check-in-target, #things-to-do-target, #contact-target, #hours-target {
+    position: relative;
+    bottom: 80px;
+  }
+  
+  /* Hero Section */
+  
+  #hero {
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url("../img/centro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+    padding-top: 100px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+  }
+  
+  /* Check In Section */
+  #check-in{
+    text-align: center;
+    margin-top: 20px;
+  }
+  #form-button {
+    margin: 20px auto;
+    width: 30%;
+  }
+  
+  
+  /* Contact Section */
+  .contact-things-to-do {
+    background-color: #9DB2BF;
+    margin: 50px 0;
+    color: black;
+    text-shadow: 2px 2px 2px rgb(141, 140, 140);
+  }
+  
+  .contact-things-to-do img{
+    height: 30vh;
+    border-radius: 10px;
+    border: #526D82 5px solid;
+  }
+  
+  #contact{
+    text-align: center;
+    padding: 50px;
+  }
+  
+  /* Things to Do Section */
+  #things-to-do{
+    text-align: center;
+    padding: 50px;
+  }
+
+  #things-to-do .things-to-do-content {
+    margin-top: 20px;
+    margin-left: 20px;
+  } 
+  
+  #things-to-do h3{
+    margin-top: 20px;
+  } 
+  
+  #things-to-do p{
+    max-width: 50%; 
+    margin: auto;
+  }
+  
+    
+
+  
+  #things-to-do a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #things-to-do a.link:visited {
+    color: white;
+  }
+  
+  /* Hours Section */
+  #hours{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #hours h3{
+    margin-bottom: 20px;
+    margin-top: -20px;
+  }
+  
+  /* Footer */
+  #footer-section {
+    background-color: #526D82;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+  }
+  
+  #footer-section a{
+    color: white;
+    
+  }
+  
+  #footer-section a.link:visited{
+    color: white;
+  }
+  
+  /* Customer Table */
+  #table{
+    text-align: center;
+    margin-top: 20px;
+    height: 800px;
+  }
+  
+  #customer-table{
+    width: 100%;
+  }
+  
+  .delete-button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .delete-button:hover{
+    background-color: #f0f0f0;
+  }
+  
+  /* Login Page */
+  .login-section {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    background: linear-gradient(135deg,#1E3D58,#526D82,#9DB2BF);
+  }
+  
+  
+  .form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+  }
+  
+  .form-box h3{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #0d6efd ;
+    position: relative;
+  }
+  
+  .form-box h3::after{
+    content: "";
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #0d6efd ;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .login-input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signup-input-group{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+  }
+  
+  .input-field i {
+    margin-left: 15px;
+    color: #999;
+  }
+  
+  #login-button, #signup-button {
+    border-radius: 3px;
+  }
+  
+  form p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    
+  }
+  
+  form p a{
+    text-decoration: none;
+  
+  }
+  
+  .toggle-button {
+    border: black solid 1px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #b8b8b8;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  button.disabled {
+    background-color: #fff;
+  }
+  
+  
+  
+  
+  
+  
+  
