@@ -10,22 +10,22 @@ html, body {
     font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
   }
-  
-  
+
+
   .navbar {
     background: #1E3D58;
     width: 100%;
     color: white !important;
     text-transform: uppercase;
   }
-  
+
   #hero-target, #check-in-target, #things-to-do-target, #contact-target, #hours-target {
     position: relative;
     bottom: 80px;
   }
-  
+
   /* Hero Section */
-  
+
   #hero {
     background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url("../img/centro.jpg");
     background-size: cover;
@@ -40,7 +40,7 @@ html, body {
     text-align: center;
     font-family: 'Staatliches', cursive;
   }
-  
+
   /* Check In Section */
   #check-in{
     text-align: center;
@@ -50,8 +50,8 @@ html, body {
     margin: 20px auto;
     width: 30%;
   }
-  
-  
+
+
   /* Contact Section */
   .contact-things-to-do {
     background-color: #9DB2BF;
@@ -59,18 +59,18 @@ html, body {
     color: black;
     text-shadow: 2px 2px 2px rgb(141, 140, 140);
   }
-  
+
   .contact-things-to-do img{
     height: 30vh;
     border-radius: 10px;
     border: #526D82 5px solid;
   }
-  
+
   #contact{
     text-align: center;
     padding: 50px;
   }
-  
+
   /* Things to Do Section */
   #things-to-do{
     text-align: center;
@@ -81,39 +81,39 @@ html, body {
     margin-top: 20px;
     margin-left: 20px;
   } 
-  
+
   #things-to-do h3{
     margin-top: 20px;
   } 
-  
+
   #things-to-do p{
     max-width: 50%; 
     margin: auto;
   }
-  
-    
 
-  
+
+
+
   #things-to-do a {
     color: white;
     text-decoration: none;
   }
-  
+
   #things-to-do a.link:visited {
     color: white;
   }
-  
+
   /* Hours Section */
   #hours{
     text-align: center;
     margin-bottom: 30px;
   }
-  
+
   #hours h3{
     margin-bottom: 20px;
     margin-top: -20px;
   }
-  
+
   /* Footer */
   #footer-section {
     background-color: #526D82;
@@ -124,27 +124,27 @@ html, body {
     height: 100px;
     text-align: center;
   }
-  
+
   #footer-section a{
     color: white;
-    
+
   }
-  
+
   #footer-section a.link:visited{
     color: white;
   }
-  
+
   /* Customer Table */
   #table{
     text-align: center;
     margin-top: 20px;
     height: 800px;
   }
-  
+
   #customer-table{
     width: 100%;
   }
-  
+
   .delete-button{
     background-color: transparent;
     border: none;
@@ -153,11 +153,11 @@ html, body {
     width: 30px;
     height: 30px;
   }
-  
+
   .delete-button:hover{
     background-color: #f0f0f0;
   }
-  
+
   /* Login Page */
   .login-section {
     width: 100%;
@@ -166,8 +166,8 @@ html, body {
     position: relative;
     background: linear-gradient(135deg,#1E3D58,#526D82,#9DB2BF);
   }
-  
-  
+
+
   .form-box{
     width: 90%;
     max-width: 450px;
@@ -179,14 +179,14 @@ html, body {
     padding: 50px 60px 70px;
     text-align: center;
   }
-  
+
   .form-box h3{
     font-size: 30px;
     margin-bottom: 60px;
     color: #0d6efd ;
     position: relative;
   }
-  
+
   .form-box h3::after{
     content: "";
     width: 30px;
@@ -198,21 +198,21 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .login-input-group {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
+
   .signup-input-group{
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
+
   .input-field{
     background: #eaeaea;
     margin: 15px 0;
@@ -220,7 +220,7 @@ html, body {
     display: flex;
     align-items: center;
   }
-  
+
   .login-input {
     width: 100%;
     background: transparent;
@@ -228,28 +228,28 @@ html, body {
     outline: 0;
     padding: 18px 15px;
   }
-  
+
   .input-field i {
     margin-left: 15px;
     color: #999;
   }
-  
+
   #login-button, #signup-button {
     border-radius: 3px;
   }
-  
+
   form p{
     padding-top: 20px;
     text-align: center;
     font-size: 13px;
-    
+
   }
-  
+
   form p a{
     text-decoration: none;
-  
+
   }
-  
+
   .toggle-button {
     border: black solid 1px;
     height: 20px;
@@ -259,14 +259,7 @@ html, body {
     cursor: pointer;
     margin: 0 5px;
   }
-  
+
   button.disabled {
     background-color: #fff;
   }
-  
-  
-  
-  
-  
-  
-  
