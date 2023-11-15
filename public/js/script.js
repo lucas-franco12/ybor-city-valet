@@ -12,7 +12,8 @@ function addCustomer() {
       return;
     }
   
-    fetch('/add-customer', {
+    fetch('/.netlify/functions/add-customer', {
+
         method: 'POST',
         headers: {
             'Content-Type' : 'application/json',
@@ -73,8 +74,8 @@ function addCustomer() {
   // display them
   async function fetchAndDisplayCustomers() {
         try {
-            const response = await fetch('/get-customers');
-            const customers = await response.json();
+          const response = await fetch('/.netlify/functions/get-customers');
+          const customers = await response.json();
 
             customers.forEach((customer, index) => {
                 addCustomerToTable(customer, index);
@@ -87,13 +88,13 @@ function addCustomer() {
   //delete customer from the database
   async function deleteCustomer(index) {
       try {
-        const response = await fetch('/get-customers');
+        const response = await fetch('/.netlify/functions/get-customers');
         const customers = await response.json();
 
         if (index >=0 && index < customers.length) {
           const customerToDelete = customers[index];
 
-          const deleteResponse = await fetch(`/delete-customer/${customerToDelete._id}`, {
+          const deleteResponse = await fetch(`/.netlify/functions/delete-customer?id=${customerToDelete._id}`, {
             method: 'DELETE',
           });
 
